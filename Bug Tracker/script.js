@@ -13,7 +13,7 @@ function addBug(name) {
     id: Date.now(),
     name,
     fixed: false,
-  };
+  }
 
   bugs.push(bug);
 }
@@ -34,7 +34,7 @@ function deleteBug(id) {
 
 function getFixedbugs(bugs) {
     let filtered = bugs.filter((b) => b.fixed === true)
-    return filtered
+    return filtered;
 }
 
 function renderBugs(list = bugs) {
