@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arena Duel</title>
+</head>
+<body>
+  <h1>Arena Duel</h1>
+
+  <h2 id="aliveCounter">Alive fighters: <span>0</span></h2>
+
+  <form id="fighterForm">
+    <input id="fighterName" type="text" placeholder="Fighter name" required />
+    <input id="fighterAttack" type="number" placeholder="Attack power" required />
+    <button type="submit">Add Fighter</button>
+  </form>
+
+  <div>
+    <button id="showAll">All</button>
+    <button id="showAlive">Alive</button>
+    <button id="showDead">Dead</button>
+  </div>
+
+  <div>
+    <button id="fightRound">Fight Round</button>
+    <button id="resetArena">Reset Arena</button>
+  </div>
+
+  <ul id="fighterList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
